@@ -12,11 +12,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: ListView(
+          physics: BouncingScrollPhysics(),
           children: <Widget>[
             Container(
               child: Stack(
                 children: <Widget>[
                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    mainAxisSize: MainAxisSize.max,
                     children: <Widget>[
                       Container(
                         height: 300,
