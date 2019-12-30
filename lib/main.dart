@@ -71,7 +71,7 @@ class MyApp extends StatelessWidget {
                                     height: 8,
                                   ),
                                   Text(
-                                    "developer@amaninformasi.com",
+                                    "developer@mbahgojol.com",
                                     style: TextStyle(
                                         color: Colors.white70, fontSize: 18),
                                   )

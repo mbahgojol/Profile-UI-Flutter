@@ -85,7 +85,7 @@ class BodyContent extends StatelessWidget {
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                     ),
                     Text(
-                      "developer@amaninformasi.com",
+                      "developer@mbahgojol.com",
                       style: TextStyle(color: Colors.grey),
                     ),
                   ],
