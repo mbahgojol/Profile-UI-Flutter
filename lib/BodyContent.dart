@@ -1,150 +1,100 @@
+import 'package:dsc_pnj/Items.dart';
 import 'package:flutter/material.dart';
 
 class BodyContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery.of(context).size.height;
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      mainAxisSize: MainAxisSize.max,
-      children: <Widget>[
-        SizedBox(
-          height: 70,
-        ),
-        Container(
-          margin: EdgeInsets.only(left: 16),
-          child: Text(
-            "Account Info",
-            style: TextStyle(
-                color: Colors.black, fontWeight: FontWeight.bold, fontSize: 30),
+    return Container(
+      padding: EdgeInsets.only(left: 16, right: 16, top: 80, bottom: 16),
+      child: Column(
+        children: <Widget>[
+          Items(
+            title: "School",
+            des: "Universitas Esa Unggul",
           ),
-        ),
-        Container(
-          margin: EdgeInsets.only(left: 16, top: 20),
-          child: Row(
-            children: <Widget>[
-              Icon(Icons.person),
-              Container(
-                margin: EdgeInsets.only(left: 10),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Text(
-                      "Name",
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-                    ),
-                    Text(
-                      "developer",
-                      style: TextStyle(color: Colors.grey),
-                    ),
-                  ],
-                ),
-              )
-            ],
+          Container(
+            margin: EdgeInsets.only(top: 30),
+            child: Items(
+              colorIcon: Colors.yellow,
+              icon: Icons.person,
+              title: "Nick Name",
+              des: "r.denial",
+            ),
           ),
-        ),
-        Container(
-          margin: EdgeInsets.only(left: 16, top: 16),
-          child: Row(
-            children: <Widget>[
-              Icon(Icons.phone_android),
-              Container(
-                margin: EdgeInsets.only(left: 10),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Text(
-                      "Mobile",
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-                    ),
-                    Text(
-                      "+91-8129999999",
-                      style: TextStyle(color: Colors.grey),
-                    ),
-                  ],
-                ),
-              )
-            ],
+          Container(
+            margin: EdgeInsets.only(top: 30),
+            child: Items(
+              colorIcon: Colors.pink,
+              icon: Icons.contacts,
+              title: "Emergency Contact",
+              des: "Jessica Curl",
+            ),
           ),
-        ),
-        Container(
-          margin: EdgeInsets.only(left: 16, top: 16),
-          child: Row(
-            children: <Widget>[
-              Icon(Icons.email),
-              Container(
-                margin: EdgeInsets.only(left: 10),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Text(
-                      "Email",
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-                    ),
-                    Text(
-                      "developer@mbahgojol.com",
-                      style: TextStyle(color: Colors.grey),
-                    ),
-                  ],
-                ),
-              )
-            ],
+          Container(
+            margin: EdgeInsets.only(top: 30),
+            child: Items(
+              colorIcon: Colors.green,
+              icon: Icons.call,
+              title: "Emergency Number",
+              des: "+1-987654321",
+            ),
           ),
-        ),
-        Container(
-          margin: EdgeInsets.only(left: 16, top: 16),
-          child: Row(
-            children: <Widget>[
-              Icon(Icons.not_listed_location),
-              Container(
-                margin: EdgeInsets.only(left: 10),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Text(
-                      "Address",
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-                    ),
-                    Text(
-                      "Avenue 2nd Street NW SY",
-                      style: TextStyle(color: Colors.grey),
-                    ),
-                  ],
-                ),
-              )
-            ],
+          Container(
+            margin: EdgeInsets.only(top: 30),
+            child: Items(
+              colorIcon: Colors.green,
+              icon: Icons.call,
+              title: "Emergency Number",
+              des: "+1-987654321",
+            ),
           ),
-        ),
-        Container(
-          margin: EdgeInsets.only(left: 16, top: 16),
-          child: Row(
-            children: <Widget>[
-              Icon(Icons.calendar_today),
-              Container(
-                margin: EdgeInsets.only(left: 10),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Text(
-                      "D.O.B",
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
-                    ),
-                    Text(
-                      "12-05-1990",
-                      style: TextStyle(color: Colors.grey),
-                    ),
-                  ],
-                ),
-              )
-            ],
+          Container(
+            margin: EdgeInsets.only(top: 30),
+            child: Items(
+              colorIcon: Colors.green,
+              icon: Icons.call,
+              title: "Emergency Number",
+              des: "+1-987654321",
+            ),
           ),
-        )
-      ],
+          Container(
+            margin: EdgeInsets.only(top: 30),
+            child: Items(
+              colorIcon: Colors.green,
+              icon: Icons.call,
+              title: "Emergency Number",
+              des: "+1-987654321",
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.only(top: 30),
+            child: Items(
+              colorIcon: Colors.green,
+              icon: Icons.call,
+              title: "Emergency Number",
+              des: "+1-987654321",
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.only(top: 30),
+            child: Items(
+              colorIcon: Colors.green,
+              icon: Icons.call,
+              title: "Emergency Number",
+              des: "+1-987654321",
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.only(top: 30),
+            child: Items(
+              colorIcon: Colors.green,
+              icon: Icons.call,
+              title: "Emergency Number",
+              des: "+1-987654321",
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
